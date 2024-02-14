@@ -1,0 +1,76 @@
+.login{
+    background-color: rgb(131, 131, 131, 0.3);
+        -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.label-color{
+    color: #97c2db;
+}
+
+.button-font{
+    font-size: 16px;
+}
+
+.form-check-label{
+    color: #97c2db;
+}
+
+.event-list{
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+.event-card{
+    background-color: rgb(131, 131, 131, 0.3);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+}
+.aligned-with-icon {
+    position: absolute;
+    margin-top: -0.34%;
+    margin-left: -1.0%;
+}
+
+::ng-deep .mat-mdc-tab-labels {
+    background-color: #489989 !important;
+    color: #ffffff !important;
+}
+
+::ng-deep .mdc-tab__text-label {
+    color: #b7d2cb !important;
+}
+
+::ng-deep .mdc-tab--active .mdc-tab__text-label {
+    color: white !important;
+}
+
+.event-card-headings{
+    color: #7cfad9;
+}
+
+.no-artist-data{
+    margin-top: 20% !important;
+    margin-bottom: 20% !important; 
+    font-weight: 450;
+}
+.carousel-inner .carousel-item{
+    transition: transform .6s ease-in-out !important;
+}
+
+.carousel-control-prev-icon {
+    filter: invert(100%);
+}
+
+.carousel-control-next-icon {
+    filter: invert(100%);
+} 
+
+.show-details{
+    color: blue;
+    font-size: 10px;
+}
+
+.redButton {
+    background-color: red;
+}

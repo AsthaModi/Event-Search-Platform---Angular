@@ -1,0 +1,9 @@
+.navbar a{
+    text-decoration: none;
+    padding: 8px 18px;
+    margin-bottom: 3%;
+}
+.astha.active{
+    border: 1px solid white;
+    border-radius: 14px;
+}

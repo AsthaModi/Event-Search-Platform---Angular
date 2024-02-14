@@ -1,0 +1,8 @@
+.fav-title {
+    font-size: 20px !important;
+    color: #75dbc4 !important;
+}
+.event-list{
+    border-collapse: collapse;
+    border: none;
+}

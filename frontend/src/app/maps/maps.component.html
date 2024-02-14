@@ -1,0 +1,12 @@
+<div class="rounded-3">
+    <p class='map-heading mb-0 pt-3 p-2 mt-3'><strong>Event Venue</strong></p>
+    <hr>
+    <div class="my-google-map  p-2">
+        <google-map [options]="mapOptions" [height]="450" width="370">
+            <map-marker [position]="marker.position"></map-marker>
+        </google-map>
+        <div mat-dialog-actions>
+            <button class="blackButton" mat-button mat-dialog-close>Close</button>
+        </div>
+    </div>
+</div>

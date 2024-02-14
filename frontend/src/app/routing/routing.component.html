@@ -1,0 +1,57 @@
+<div *ngIf="keyLS.length===0" class="bg-white rounded-4 text-danger text-center mt-4 mx-auto col-lg-6 col-10 fs-5">No
+    favorite events to show</div>
+
+
+<div *ngIf="keyLS.length>0" class="col-lg-7 col-11 mx-auto text-center table-responsive">
+    <p class="fav-title pt-3 pb-2">List of your favorite events</p>
+    <div class="mx-auto text-center ">
+        <table class="table table-light table-hover rounded-4 overflow-hidden event-list">
+            <thead>
+                <tr>
+                    <th class="col col-md-1">#</th>
+                    <th scope="col col-md-2">Date</th>
+                    <th scope="col col-md-3">Event</th>
+                    <th scope="col col-md-3">Category</th>
+                    <th scope="col col-md-2">Venue</th>
+                    <th scope="col col-md-1">Favorite</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let k of keyLS; index as i">
+                    <th>{{i+1}}</th>
+                    <td>{{k.value[0]}}</td>
+                    <td>{{k.value[1]}}</td>
+                    <td>{{k.value[2]}}</td>
+                    <td>{{k.value[3]}}</td>
+                    <td (click)="removeElement(k.value[4])"><mat-icon svgIcon="trash-icon" style="cursor:pointer"
+                            aria-hidden="false"></mat-icon></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+<!-- <div *ngIf="eventList && eventList.length!=0 && eventListTableFlag && !eventCardFlag" class='mt-5 events-search-mobile'>
+    <table class="table table-striped table-dark event-list mx-auto w-75 col-lg-9 col-sm-12 text-center">
+        <thead>
+            <tr>
+                <th scope="col" class="col-md-2">Date/Time</th>
+                <th scope="col" class="col-md-1">Icon</th>
+                <th scope="col" class="col-md-4">Event</th>
+                <th scope="col" class="col-md-1">Genre</th>
+                <th scope="col" class="col-md-1">Venue</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let e of eventList">
+                <th scope="row">{{e.eDate}}<br>{{e.eTime}}</th>
+                <td><img [src]="e.eIcon" class="icon"></td>
+                <td style="cursor: pointer;" (click)="searchEventDetails(e.eId);eventCardFlag=true">{{e.eName}}</td>
+                <td>{{e.eGenre}}</td>
+                <td>{{e.eVenue}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>-->

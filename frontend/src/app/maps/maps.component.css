@@ -1,0 +1,9 @@
+.map-heading{
+    font-weight: 130;
+    font-size: 25px;
+}
+
+.blackButton{
+    background-color: black;
+    color: white !important;
+}
